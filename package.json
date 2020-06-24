@@ -1,0 +1,16 @@
+{
+  "name": "tpu-olimp",
+  "version": "0.0.1",
+  "description": "The app is an example of fetching olympiads data from https://diploma.olimpiada.ru",
+  "main": "index.js",
+  "repository": "https://g-gray.guthub.com/tpu-olimp",
+  "author": "g",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "jssha": "^3.1.0",
+    "xhttp": "^0.12.0"
+  }
+}
