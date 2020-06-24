@@ -58,7 +58,7 @@ async function fetchOlymps(personHash) {
   // Simultaneous fetching
   const rows = await Promise.all(YEARS.map((year) => {
     return Promise.all(OLYMPS.map((olymp) => {
-      return fetchOlympData(olymp, year, personHash)
+      return fetchOlympsByYearAndPerson(olymp, year, personHash)
     }))
   }))
 
@@ -72,7 +72,7 @@ async function fetchOlymps(personHash) {
   return result
 }
 
-async function fetchOlympData(olymp, year, personHash) {
+async function fetchOlympsByYearAndPerson(olymp, year, personHash) {
   let olympDataText
 
   try {
