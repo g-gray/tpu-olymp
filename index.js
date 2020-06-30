@@ -73,7 +73,7 @@ async function fetchOlymps(personHash) {
 }
 
 async function fetchOlympsByYearAndPerson(olymp, year, personHash) {
-  let olympDataText
+  let olympDataText = ''
 
   try {
     const {body} = await fetch({
